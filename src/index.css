@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&family=Pinyon+Script&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-script: "Pinyon Script", cursive;
+  
+  --color-cream: #FDFBF7;
+  --color-cream-dark: #F0EAE0;
+  --color-pink: #F28482;
+  --color-pink-light: #FCE8E8;
+  --color-pink-dark: #D65A72;
+  --color-green: #84A59D;
+  --color-green-light: #E0ECE8;
+  --color-green-dark: #5C7A72;
+  --color-maroon: #3B0918;
+  --color-maroon-light: #5A1E32;
+  --color-text: var(--color-maroon);
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+:root {
+  background-color: var(--color-cream);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
